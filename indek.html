@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijital Planlayıcım</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-purple">
+
+    <div class="theme-selector">
+        <button onclick="changeTheme('theme-purple')">🌸 Mor-Pembe</button>
+        <button onclick="changeTheme('theme-blue')">🍊 Mavi-Turuncu</button>
+        <button onclick="changeTheme('theme-green')">💛 Yeşil-Sarı</button>
+    </div>
+
+    <div class="planner-card">
+        <header>
+            <h1 id="page-title">Günlük Planlayıcı - Sayfa 1</h1>
+            <input type="date" id="date-input">
+        </header>
+          
+       <div class="progress-container">
+           <div id="progress-bar"></div>
+     </div>
+     
+          <main class="grid-container">
+            <section class="todo-section">
+                <h3>📝 Yapılacaklar</h3>
+                <div class="input-group">
+                    <input type="text" id="todo-input" placeholder="Yeni görev...">
+                    <button onclick="addTodo()">+</button>
+                </div>
+                <div id="todo-list"></div>
+            </section>
+
+            <section class="mood-section">
+                <h3>🌟 O Gün Nasıl Geçti?</h3>
+                <textarea id="mood-text" placeholder="Bugün neler hissettin?"></textarea>
+            </section>
+        </main>
+
+        <div class="nav-buttons">
+            <button onclick="changePage(-1)">◀ Geri</button>
+            <span id="page-num">1 / 10</span>
+            <button onclick="changePage(1)">İleri ▶</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
