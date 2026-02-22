@@ -1,5 +1,3 @@
-// --- GÜNCELLENMİŞ SCRIPT.JS ---
-
 let currentPage = 1;
 const totalPages = 10;
 let plannerData = JSON.parse(localStorage.getItem('myPlanner')) || {};
@@ -10,7 +8,7 @@ window.onload = () => {
     changeTheme(savedTheme);
 };
 
-// Sayfa Değiştirme
+
 function changePage(step) {
     saveCurrentPageData(); 
     currentPage += step;
@@ -21,11 +19,11 @@ function changePage(step) {
     loadPageData();
 }
 
-// Veriyi Kaydet
+
 function saveCurrentPageData() {
     const todos = [];
     document.querySelectorAll('.todo-item').forEach(item => {
-        // Checkbox durumunu doğru yakalamak için
+      
         const isChecked = item.classList.contains('checked');
         todos.push({
             text: item.querySelector('span').innerText,
@@ -40,10 +38,10 @@ function saveCurrentPageData() {
     };
 
     localStorage.setItem('myPlanner', JSON.stringify(plannerData));
-    updateProgress(); // Her kayıtta çubuğu güncelle
+    updateProgress(); 
 }
 
-// Veriyi Yükle
+
 function loadPageData() {
     const data = plannerData[currentPage] || { date: '', mood: '', todos: [] };
     document.getElementById('date-input').value = data.date || "";
@@ -53,10 +51,10 @@ function loadPageData() {
     if(data.todos) {
         data.todos.forEach(todo => renderTodo(todo.text, todo.completed));
     }
-    updateProgress(); // Sayfa açılınca çubuğu güncelle
+    updateProgress(); 
 }
 
-// To-do Ekleme
+
 function addTodo() {
     const input = document.getElementById('todo-input');
     if (input.value.trim() === "") return;
@@ -65,7 +63,7 @@ function addTodo() {
     saveCurrentPageData();
 }
 
-// TEK VE GÜNCEL RENDER FONKSİYONU
+
 function renderTodo(text, isChecked) {
     const listDiv = document.getElementById('todo-list');
     const div = document.createElement('div');
@@ -77,19 +75,19 @@ function renderTodo(text, isChecked) {
         <span class="delete-btn" onclick="event.stopPropagation(); todoSil(this, '${text}')">🗑️</span>
     `;
     
-    // Satıra tıklandığında tamamlama özelliği
+    
     div.onclick = () => toggleTodo(div);
     listDiv.appendChild(div);
     updateProgress();
 }
 
-// Tik atma işlemi
+
 function toggleTodo(itemElement) {
     itemElement.classList.toggle('checked');
     saveCurrentPageData();
 }
 
-// Silme Fonksiyonu
+
 function todoSil(buton, silinecekMetin) {
     buton.parentElement.remove();
     const sayfaGorevleri = plannerData[currentPage].todos || [];
@@ -98,7 +96,7 @@ function todoSil(buton, silinecekMetin) {
     updateProgress();
 }
 
-// İlerleme Çubuğu Güncelleme
+
 function updateProgress() {
     const total = document.querySelectorAll('.todo-item').length;
     const completed = document.querySelectorAll('.todo-item.checked').length;
@@ -109,12 +107,13 @@ function updateProgress() {
     }
 }
 
-// Tema Değiştirme
+
 function changeTheme(themeName) {
     document.body.className = themeName;
     localStorage.setItem('theme', themeName);
 }
 
-// Otomatik Kayıt Dinleyicileri
+
 document.getElementById('mood-text').addEventListener('input', saveCurrentPageData);
+
 document.getElementById('date-input').addEventListener('change', saveCurrentPageData);
