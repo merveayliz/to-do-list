@@ -63,7 +63,6 @@ function addTodo() {
     saveCurrentPageData();
 }
 
-
 function renderTodo(text, isChecked) {
     const listDiv = document.getElementById('todo-list');
     const div = document.createElement('div');
@@ -72,10 +71,16 @@ function renderTodo(text, isChecked) {
     div.innerHTML = `
         <div class="custom-checkbox"></div>
         <span style="flex: 1;">${text}</span>
-        <span class="delete-btn" onclick="event.stopPropagation(); todoSil(this, '${text}')">🗑️</span>
+        <span class="delete-btn">🗑️</span>
     `;
     
-    
+    // Silme butonuna tıklandığında
+    div.querySelector('.delete-btn').addEventListener('click', (e) => {
+        e.stopPropagation(); // Kartın tıklanma olayını (toggle) engelle
+        div.remove();        // Ekrandan sil
+        saveCurrentPageData(); // Hafızayı güncelle
+    });
+
     div.onclick = () => toggleTodo(div);
     listDiv.appendChild(div);
     updateProgress();
@@ -117,3 +122,4 @@ function changeTheme(themeName) {
 document.getElementById('mood-text').addEventListener('input', saveCurrentPageData);
 
 document.getElementById('date-input').addEventListener('change', saveCurrentPageData);
+
