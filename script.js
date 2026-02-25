@@ -75,17 +75,17 @@ function renderTodo(text, isChecked) {
     `;
     
    
-    div.querySelector('.delete-btn').addEventListener('click', (e) => {
+   div.querySelector('.delete-btn').addEventListener('click', (e) => {
         e.stopPropagation(); 
         div.remove();       
         saveCurrentPageData(); 
     });
 
     div.onclick = () => toggleTodo(div);
+    
     listDiv.appendChild(div);
     updateProgress();
 }
-
 
 function toggleTodo(itemElement) {
     itemElement.classList.toggle('checked');
@@ -122,5 +122,6 @@ function changeTheme(themeName) {
 document.getElementById('mood-text').addEventListener('input', saveCurrentPageData);
 
 document.getElementById('date-input').addEventListener('change', saveCurrentPageData);
+
 
 
