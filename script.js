@@ -74,11 +74,11 @@ function renderTodo(text, isChecked) {
         <span class="delete-btn">🗑️</span>
     `;
     
-    // Silme butonuna tıklandığında
+   
     div.querySelector('.delete-btn').addEventListener('click', (e) => {
-        e.stopPropagation(); // Kartın tıklanma olayını (toggle) engelle
-        div.remove();        // Ekrandan sil
-        saveCurrentPageData(); // Hafızayı güncelle
+        e.stopPropagation(); 
+        div.remove();       
+        saveCurrentPageData(); 
     });
 
     div.onclick = () => toggleTodo(div);
@@ -122,4 +122,5 @@ function changeTheme(themeName) {
 document.getElementById('mood-text').addEventListener('input', saveCurrentPageData);
 
 document.getElementById('date-input').addEventListener('change', saveCurrentPageData);
+
 
