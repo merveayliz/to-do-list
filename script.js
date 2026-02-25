@@ -63,24 +63,7 @@ function addTodo() {
     saveCurrentPageData();
 }
 
-function renderTodo(text, isChecked) {
-    const listDiv = document.getElementById('todo-list');
-    const div = document.createElement('div');
-    div.className = `todo-item ${isChecked ? 'checked' : ''}`;
-    
-    div.innerHTML = `
-        <div class="custom-checkbox"></div>
-        <span style="flex: 1;">${text}</span>
-        <span class="delete-btn">🗑️</span>
-    `;
-    
-   
-   div.querySelector('.delete-btn').addEventListener('click', (e) => {
-        e.stopPropagation(); 
-        div.remove();       
-        saveCurrentPageData(); 
-    });
-
+ 
     div.onclick = () => toggleTodo(div);
     
     listDiv.appendChild(div);
@@ -122,6 +105,7 @@ function changeTheme(themeName) {
 document.getElementById('mood-text').addEventListener('input', saveCurrentPageData);
 
 document.getElementById('date-input').addEventListener('change', saveCurrentPageData);
+
 
 
 
