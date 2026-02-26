@@ -254,3 +254,23 @@ textarea {
     pointer-events: none; 
 }
 
+
+/* Status Bar & Ayliz Dev Link */
+#status-bar {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.4);
+    pointer-events: none;
+}
+
+.dev-link {
+    color: var(--glass-blue);
+    text-decoration: none;
+    font-weight: 800;
+    transition: 0.3s;
+    pointer-events: auto;
+}
