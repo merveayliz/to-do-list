@@ -39,7 +39,6 @@ body {
 }
 
 
-/* TEMA BUTONLARI */
 .theme-selector { 
     margin-bottom: 20px; 
     display: flex; 
@@ -86,7 +85,6 @@ input[type="date"] {
     padding: 5px; 
 }
 
-/* GRID ALANLARI */
 .grid-container { 
     display: flex; 
     flex-direction: column; 
@@ -106,7 +104,6 @@ h3 {
     color: var(--primary); 
 }
 
-/* TO-DO STİLLERİ */
 .input-group { 
     display: flex; 
     gap: 5px; 
@@ -191,7 +188,6 @@ h3 {
 }
 .todo-item input[type="checkbox"] { transform: scale(1.2); cursor: pointer; }
 
-/* MOOD / TEXTAREA */
 textarea {
     width: 100%; 
     height: 100px; 
@@ -220,7 +216,6 @@ textarea {
     font-weight: bold;
 }
 
-/* MOBİL AYARLAR */
 @media (max-width: 400px) {
     .planner-card { padding: 15px; }
     h1 { font-size: 1rem; }
