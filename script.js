@@ -75,11 +75,10 @@ function addTodo() {
         <span class="delete-btn"></span>
     `;
     
-    // SİLME İŞLEMİ:
     div.querySelector('.delete-btn').addEventListener('click', (e) => {
-        e.stopPropagation(); // Satırın tıklanma (tik atma) olayını engeller
-        div.remove();        // Görsel olarak siler
-        saveCurrentPageData(); // localStorage'ı ve ilerleme çubuğunu anında günceller
+        e.stopPropagation(); 
+        div.remove();       
+        saveCurrentPageData(); 
     });
     div.onclick = () => toggleTodo(div);
     
