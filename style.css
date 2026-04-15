@@ -9,7 +9,6 @@
     --text: #2c3e50;
 }
 
-
 body {
     background-color: var(--bg-color);
     display: flex;
@@ -56,7 +55,7 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* ANA KART */
+
 .planner-card {
     background: var(--card-bg);
     width: 100%;
@@ -75,9 +74,12 @@ header {
     flex-wrap: wrap; 
     gap: 10px; 
 }
+
+
 h1 { font-size: 1.2rem; 
     color: var(--primary); 
 }
+
 
 input[type="date"] { 
     border: 1px solid var(--secondary); 
@@ -140,9 +142,12 @@ h3 {
     border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
+
 .todo-item:hover {
     background: rgba(0, 0, 0, 0.08);
 }
+
+
 .todo-item.checked { 
     background: var(--primary); 
     color: white; 
@@ -181,11 +186,14 @@ h3 {
     display: block;
 }
 
+
 .delete-btn {
     margin-left: auto; 
     font-size: 1.2rem;
     padding: 5px;
 }
+
+
 .todo-item input[type="checkbox"] { transform: scale(1.2); cursor: pointer; }
 
 textarea {
@@ -199,13 +207,15 @@ textarea {
     background: white;
 }
 
-/* NAVİGASYON BUTONLARI (Alt Köşe) */
+
 .nav-buttons {
     margin-top: 30px; 
     display: flex; 
     justify-content: space-between; 
     align-items: center;
 }
+
+
 .nav-buttons button {
     background: var(--primary); 
     color: white; 
@@ -238,6 +248,8 @@ textarea {
     margin-bottom: 20px;
     overflow: hidden;
 }
+
+
 #progress-bar {
     width: 0%;
     height: 100%;
