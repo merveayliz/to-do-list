@@ -50,6 +50,7 @@ body {
     flex-wrap: wrap; 
     justify-content: center; 
 }
+
 .theme-selector button {
     padding: 8px 15px; 
     border: none; 
@@ -71,6 +72,7 @@ body {
     position: relative;
 }
 
+
 header { 
     display: flex; 
     justify-content: space-between; 
@@ -81,7 +83,8 @@ header {
 }
 
 
-h1 { font-size: 1.2rem; 
+h1 {
+    font-size: 1.2rem; 
     color: var(--primary); 
 }
 
