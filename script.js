@@ -31,6 +31,7 @@ function saveCurrentPageData() {
         });
     });
 
+    
     plannerData[currentPage] = {
         date: document.getElementById('date-input').value,
         mood: document.getElementById('mood-text').value,
