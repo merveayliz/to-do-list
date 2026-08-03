@@ -8,7 +8,6 @@ window.onload = () => {
     changeTheme(savedTheme);
 };
 
-
 function changePage(step) {
     saveCurrentPageData(); 
     currentPage += step;
