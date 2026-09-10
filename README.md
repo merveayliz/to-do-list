@@ -14,7 +14,6 @@ Günlük görevlerinizi kolayca planlamanızı, organize etmenizi ve takip etmen
 * 💾 **Kalıcı Depolama (LocalStorage):** Sayfayı yenileseniz veya tarayıcıyı kapatsanız bile verileriniz kaybolmaz.
 * 📱 **Tam Responsive Tasarım:** Mobil, tablet ve masaüstü ekranlarıyla tam uyumlu modern arayüz.
 * 🎨 **Clean UI/UX:** Odaklanmayı artıran sade, göz yormayan ve şık tasarım.
-
 ---
 
 ## 🛠️ Kullanılan Teknolojiler
