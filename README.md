@@ -22,4 +22,4 @@ Günlük görevlerinizi kolayca planlamanızı, organize etmenizi ve takip etmen
 * **CSS3:** Modern düzenleme ve stillendirme.
 * **JavaScript (ES6+):** Dinamik DOM yönetimi ve LocalStorage mantığı.
 
----
+--
