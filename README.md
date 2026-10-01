@@ -2,7 +2,6 @@
 
 Günlük görevlerinizi kolayca planlamanızı, organize etmenizi ve takip etmenizi sağlayan şık, kullanıcı dostu ve responsive bir yapılacaklar listesi web uygulaması.
 
-
 🌐 **[Canlı Demoyu İncele](https://merveayliz.github.io/to-do-list/)**
 
 ---
