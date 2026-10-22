@@ -3,7 +3,6 @@
 <div align="center">
   <p><em>Günlük görevleri kolayca yönetmenizi, organize etmenizi ve takip etmenizi sağlayan modern bir yapılacaklar listesi uygulaması. / A modern task manager application that allows you to easily manage, organize, and track your daily tasks.</em></p>
 
-  <!-- Badges -->
   <p>
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
@@ -41,11 +40,3 @@
 * **JavaScript (DOM Manipulation):** Görev ekleme, silme ve dinamik arayüz yönetimi / Task creation, deletion, and dynamic UI management
 
 ---
-
-## 🚀 Projeyi Çalıştırma / Getting Started
-```bash
-# Repository'yi klonlayın / Clone the repository
-git clone [https://github.com/merveayliz/to-do-list.git](https://github.com/merveayliz/to-do-list.git)
-
-# Proje klasörüne girin / Navigate to the directory
-cd to-do-list
