@@ -39,4 +39,3 @@
 * **CSS3:** Stil yönetimi, modern layout ve geçişler / Styling, modern layout, and transitions
 * **JavaScript (DOM Manipulation):** Görev ekleme, silme ve dinamik arayüz yönetimi / Task creation, deletion, and dynamic UI management
 
----
